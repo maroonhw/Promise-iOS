@@ -3,13 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13396BFD583C67D632F7B64F /* Pods_Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2BA666CE0290F4BC4AEA72 /* Pods_Promise.framework */; };
+		2BBB4805F3BC61C9DA52A043 /* Pods_PromiseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12C7E594461DEFDD8BA2BBE /* Pods_PromiseTests.framework */; };
+		3B201EE2B0331A4145D6BA95 /* Pods_Promise_PromiseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8693158698F336119367D055 /* Pods_Promise_PromiseUITests.framework */; };
+		4886800F26198F5E009417CB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4886800E26198F5E009417CB /* Podfile */; };
+		4886802C26199218009417CB /* PROLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886802B26199218009417CB /* PROLoginViewController.m */; };
+		488680322619922C009417CB /* PRORegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680312619922C009417CB /* PRORegisterViewController.m */; };
+		4886803826199298009417CB /* PROBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886803726199298009417CB /* PROBaseViewController.m */; };
+		488680652619971D009417CB /* PROTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886805C2619971D009417CB /* PROTableViewManager.m */; };
+		488680662619971D009417CB /* PROTableViewBaseSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886805E2619971D009417CB /* PROTableViewBaseSection.m */; };
+		488680672619971D009417CB /* UITableViewCell+PRODequeue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886805F2619971D009417CB /* UITableViewCell+PRODequeue.m */; };
+		488680682619971D009417CB /* PROTableViewBaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680612619971D009417CB /* PROTableViewBaseRow.m */; };
+		4886808026199972009417CB /* PRORegisterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886807F26199972009417CB /* PRORegisterService.m */; };
+		4886808A261999A8009417CB /* PROLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 48868089261999A8009417CB /* PROLoginService.m */; };
+		488680952619A868009417CB /* PROAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680942619A868009417CB /* PROAccount.m */; };
+		4886809D2619AB8D009417CB /* PROLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886809C2619AB8D009417CB /* PROLoginViewModel.m */; };
+		488680A62619ABBA009417CB /* PRORegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680A52619ABBA009417CB /* PRORegisterViewModel.m */; };
+		488680CF2619F4AE009417CB /* PROAlertModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680CA2619F4AE009417CB /* PROAlertModel.m */; };
+		488680D02619F4AE009417CB /* PROAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680CD2619F4AE009417CB /* PROAlertViewController.m */; };
+		488680D12619F4AE009417CB /* PROAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680CE2619F4AE009417CB /* PROAlertView.m */; };
+		488681712619F68D009417CB /* PROUIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 488681702619F68D009417CB /* PROUIUtil.m */; };
+		488681782619F9B8009417CB /* PROUIFontUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 488681772619F9B8009417CB /* PROUIFontUtil.m */; };
+		4886817E2619FA48009417CB /* PROUIColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886817D2619FA48009417CB /* PROUIColorUtil.m */; };
+		488681842619FB16009417CB /* NSObject+PROColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 488681832619FB16009417CB /* NSObject+PROColorStyle.m */; };
+		4886818B261A0017009417CB /* PROSafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886818A261A0017009417CB /* PROSafeCategory.m */; };
+		48868197261A070C009417CB /* PROToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48868193261A070C009417CB /* PROToastView.m */; };
+		48868198261A070C009417CB /* UIResponder+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 48868194261A070C009417CB /* UIResponder+Toast.m */; };
 		48C6933926198B1700180A8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6933826198B1700180A8F /* AppDelegate.m */; };
 		48C6933C26198B1700180A8F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6933B26198B1700180A8F /* SceneDelegate.m */; };
-		48C6933F26198B1700180A8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6933E26198B1700180A8F /* ViewController.m */; };
 		48C6934226198B1700180A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C6934026198B1700180A8F /* Main.storyboard */; };
 		48C6934426198B1900180A8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C6934326198B1900180A8F /* Assets.xcassets */; };
 		48C6934726198B1900180A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C6934526198B1900180A8F /* LaunchScreen.storyboard */; };
@@ -36,13 +61,60 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		354C7849D2B9E5A43631E4D2 /* Pods-Promise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promise.release.xcconfig"; path = "Target Support Files/Pods-Promise/Pods-Promise.release.xcconfig"; sourceTree = "<group>"; };
+		4886800E26198F5E009417CB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4886802A26199218009417CB /* PROLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROLoginViewController.h; sourceTree = "<group>"; };
+		4886802B26199218009417CB /* PROLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROLoginViewController.m; sourceTree = "<group>"; };
+		488680302619922C009417CB /* PRORegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRORegisterViewController.h; sourceTree = "<group>"; };
+		488680312619922C009417CB /* PRORegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRORegisterViewController.m; sourceTree = "<group>"; };
+		4886803626199298009417CB /* PROBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROBaseViewController.h; sourceTree = "<group>"; };
+		4886803726199298009417CB /* PROBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROBaseViewController.m; sourceTree = "<group>"; };
+		4886803C2619933E009417CB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4886805C2619971D009417CB /* PROTableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROTableViewManager.m; sourceTree = "<group>"; };
+		4886805D2619971D009417CB /* PROTableViewBaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROTableViewBaseRow.h; sourceTree = "<group>"; };
+		4886805E2619971D009417CB /* PROTableViewBaseSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROTableViewBaseSection.m; sourceTree = "<group>"; };
+		4886805F2619971D009417CB /* UITableViewCell+PRODequeue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+PRODequeue.m"; sourceTree = "<group>"; };
+		488680602619971D009417CB /* PROTableViewBaseSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROTableViewBaseSection.h; sourceTree = "<group>"; };
+		488680612619971D009417CB /* PROTableViewBaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROTableViewBaseRow.m; sourceTree = "<group>"; };
+		488680622619971D009417CB /* PROTableViewConfigProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROTableViewConfigProtocol.h; sourceTree = "<group>"; };
+		488680632619971D009417CB /* PROTableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROTableViewManager.h; sourceTree = "<group>"; };
+		488680642619971D009417CB /* UITableViewCell+PRODequeue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+PRODequeue.h"; sourceTree = "<group>"; };
+		4886807E26199972009417CB /* PRORegisterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRORegisterService.h; sourceTree = "<group>"; };
+		4886807F26199972009417CB /* PRORegisterService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRORegisterService.m; sourceTree = "<group>"; };
+		48868088261999A8009417CB /* PROLoginService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROLoginService.h; sourceTree = "<group>"; };
+		48868089261999A8009417CB /* PROLoginService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROLoginService.m; sourceTree = "<group>"; };
+		4886808F26199B4A009417CB /* PROCommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROCommonDefine.h; sourceTree = "<group>"; };
+		488680932619A868009417CB /* PROAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROAccount.h; sourceTree = "<group>"; };
+		488680942619A868009417CB /* PROAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROAccount.m; sourceTree = "<group>"; };
+		4886809B2619AB8D009417CB /* PROLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROLoginViewModel.h; sourceTree = "<group>"; };
+		4886809C2619AB8D009417CB /* PROLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROLoginViewModel.m; sourceTree = "<group>"; };
+		488680A42619ABBA009417CB /* PRORegisterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRORegisterViewModel.h; sourceTree = "<group>"; };
+		488680A52619ABBA009417CB /* PRORegisterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRORegisterViewModel.m; sourceTree = "<group>"; };
+		488680C92619F4AE009417CB /* PROAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROAlertViewController.h; sourceTree = "<group>"; };
+		488680CA2619F4AE009417CB /* PROAlertModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROAlertModel.m; sourceTree = "<group>"; };
+		488680CB2619F4AE009417CB /* PROAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROAlertView.h; sourceTree = "<group>"; };
+		488680CC2619F4AE009417CB /* PROAlertModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROAlertModel.h; sourceTree = "<group>"; };
+		488680CD2619F4AE009417CB /* PROAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROAlertViewController.m; sourceTree = "<group>"; };
+		488680CE2619F4AE009417CB /* PROAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROAlertView.m; sourceTree = "<group>"; };
+		4886816F2619F68D009417CB /* PROUIUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROUIUtil.h; sourceTree = "<group>"; };
+		488681702619F68D009417CB /* PROUIUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROUIUtil.m; sourceTree = "<group>"; };
+		488681762619F9B8009417CB /* PROUIFontUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROUIFontUtil.h; sourceTree = "<group>"; };
+		488681772619F9B8009417CB /* PROUIFontUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROUIFontUtil.m; sourceTree = "<group>"; };
+		4886817C2619FA48009417CB /* PROUIColorUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROUIColorUtil.h; sourceTree = "<group>"; };
+		4886817D2619FA48009417CB /* PROUIColorUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROUIColorUtil.m; sourceTree = "<group>"; };
+		488681822619FB16009417CB /* NSObject+PROColorStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PROColorStyle.h"; sourceTree = "<group>"; };
+		488681832619FB16009417CB /* NSObject+PROColorStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PROColorStyle.m"; sourceTree = "<group>"; };
+		48868189261A0017009417CB /* PROSafeCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROSafeCategory.h; sourceTree = "<group>"; };
+		4886818A261A0017009417CB /* PROSafeCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROSafeCategory.m; sourceTree = "<group>"; };
+		48868193261A070C009417CB /* PROToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROToastView.m; sourceTree = "<group>"; };
+		48868194261A070C009417CB /* UIResponder+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Toast.m"; sourceTree = "<group>"; };
+		48868195261A070C009417CB /* PROToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROToastView.h; sourceTree = "<group>"; };
+		48868196261A070C009417CB /* UIResponder+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Toast.h"; sourceTree = "<group>"; };
 		48C6933426198B1700180A8F /* Promise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Promise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C6933726198B1700180A8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48C6933826198B1700180A8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		48C6933A26198B1700180A8F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		48C6933B26198B1700180A8F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		48C6933D26198B1700180A8F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		48C6933E26198B1700180A8F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		48C6934126198B1700180A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48C6934326198B1900180A8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48C6934626198B1900180A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +126,14 @@
 		48C6935A26198B1900180A8F /* PromiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromiseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C6935E26198B1900180A8F /* PromiseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PromiseUITests.m; sourceTree = "<group>"; };
 		48C6936026198B1900180A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5178D91F8D13688DC0F9E469 /* Pods-Promise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promise.debug.xcconfig"; path = "Target Support Files/Pods-Promise/Pods-Promise.debug.xcconfig"; sourceTree = "<group>"; };
+		5CB426F6FAB088C64E2F05EA /* Pods-PromiseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromiseTests.debug.xcconfig"; path = "Target Support Files/Pods-PromiseTests/Pods-PromiseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		865383B0FFE5B7ED01733C35 /* Pods-Promise-PromiseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promise-PromiseUITests.release.xcconfig"; path = "Target Support Files/Pods-Promise-PromiseUITests/Pods-Promise-PromiseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8693158698F336119367D055 /* Pods_Promise_PromiseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Promise_PromiseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23F079B6C3BB4E79409C44F /* Pods-PromiseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromiseTests.release.xcconfig"; path = "Target Support Files/Pods-PromiseTests/Pods-PromiseTests.release.xcconfig"; sourceTree = "<group>"; };
+		A78C341695267B1C2BB5CB71 /* Pods-Promise-PromiseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promise-PromiseUITests.debug.xcconfig"; path = "Target Support Files/Pods-Promise-PromiseUITests/Pods-Promise-PromiseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD2BA666CE0290F4BC4AEA72 /* Pods_Promise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Promise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12C7E594461DEFDD8BA2BBE /* Pods_PromiseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PromiseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13396BFD583C67D632F7B64F /* Pods_Promise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BBB4805F3BC61C9DA52A043 /* Pods_PromiseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +157,212 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B201EE2B0331A4145D6BA95 /* Pods_Promise_PromiseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48867FFE26198CF5009417CB /* launchManager */ = {
+			isa = PBXGroup;
+			children = (
+				48C6933A26198B1700180A8F /* SceneDelegate.h */,
+				48C6933B26198B1700180A8F /* SceneDelegate.m */,
+				48C6933726198B1700180A8F /* AppDelegate.h */,
+				48C6933826198B1700180A8F /* AppDelegate.m */,
+			);
+			path = launchManager;
+			sourceTree = "<group>";
+		};
+		48867FFF26198D6C009417CB /* Biz */ = {
+			isa = PBXGroup;
+			children = (
+				4886800226198D96009417CB /* Me */,
+				4886800126198D8D009417CB /* Home */,
+				4886800026198D79009417CB /* LoginRegister */,
+			);
+			path = Biz;
+			sourceTree = "<group>";
+		};
+		4886800026198D79009417CB /* LoginRegister */ = {
+			isa = PBXGroup;
+			children = (
+				4886809A2619AB6B009417CB /* ViewModel */,
+				488680992619AB25009417CB /* ViewController */,
+			);
+			path = LoginRegister;
+			sourceTree = "<group>";
+		};
+		4886800126198D8D009417CB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4886800226198D96009417CB /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		4886800326198DC3009417CB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4886808E26199B24009417CB /* Common */,
+				4886802326199173009417CB /* AccountService */,
+				4886800526198DF7009417CB /* UICommon */,
+				4886800426198DDF009417CB /* RequestService */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4886800426198DDF009417CB /* RequestService */ = {
+			isa = PBXGroup;
+			children = (
+				4886808426199977009417CB /* LoginRegister */,
+			);
+			path = RequestService;
+			sourceTree = "<group>";
+		};
+		4886800526198DF7009417CB /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				48868192261A070C009417CB /* PROToast */,
+				4886816E2619F65F009417CB /* PROUIUtil */,
+				488680C82619F4AE009417CB /* PROAlert */,
+				4886805B2619971D009417CB /* PROTableViewManager */,
+				4886804326199605009417CB /* BaseViewController */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		4886802326199173009417CB /* AccountService */ = {
+			isa = PBXGroup;
+			children = (
+				488680932619A868009417CB /* PROAccount.h */,
+				488680942619A868009417CB /* PROAccount.m */,
+			);
+			path = AccountService;
+			sourceTree = "<group>";
+		};
+		4886804326199605009417CB /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4886803626199298009417CB /* PROBaseViewController.h */,
+				4886803726199298009417CB /* PROBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		4886805B2619971D009417CB /* PROTableViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				488680632619971D009417CB /* PROTableViewManager.h */,
+				4886805C2619971D009417CB /* PROTableViewManager.m */,
+				4886805D2619971D009417CB /* PROTableViewBaseRow.h */,
+				488680612619971D009417CB /* PROTableViewBaseRow.m */,
+				488680602619971D009417CB /* PROTableViewBaseSection.h */,
+				4886805E2619971D009417CB /* PROTableViewBaseSection.m */,
+				488680622619971D009417CB /* PROTableViewConfigProtocol.h */,
+				4886805F2619971D009417CB /* UITableViewCell+PRODequeue.m */,
+				488680642619971D009417CB /* UITableViewCell+PRODequeue.h */,
+			);
+			path = PROTableViewManager;
+			sourceTree = "<group>";
+		};
+		4886808426199977009417CB /* LoginRegister */ = {
+			isa = PBXGroup;
+			children = (
+				4886807E26199972009417CB /* PRORegisterService.h */,
+				4886807F26199972009417CB /* PRORegisterService.m */,
+				48868088261999A8009417CB /* PROLoginService.h */,
+				48868089261999A8009417CB /* PROLoginService.m */,
+			);
+			path = LoginRegister;
+			sourceTree = "<group>";
+		};
+		4886808E26199B24009417CB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				488681882619FFAE009417CB /* category */,
+				4886808F26199B4A009417CB /* PROCommonDefine.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		488680992619AB25009417CB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4886802A26199218009417CB /* PROLoginViewController.h */,
+				4886802B26199218009417CB /* PROLoginViewController.m */,
+				488680302619922C009417CB /* PRORegisterViewController.h */,
+				488680312619922C009417CB /* PRORegisterViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4886809A2619AB6B009417CB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4886809B2619AB8D009417CB /* PROLoginViewModel.h */,
+				4886809C2619AB8D009417CB /* PROLoginViewModel.m */,
+				488680A42619ABBA009417CB /* PRORegisterViewModel.h */,
+				488680A52619ABBA009417CB /* PRORegisterViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		488680C82619F4AE009417CB /* PROAlert */ = {
+			isa = PBXGroup;
+			children = (
+				488680C92619F4AE009417CB /* PROAlertViewController.h */,
+				488680CD2619F4AE009417CB /* PROAlertViewController.m */,
+				488680CC2619F4AE009417CB /* PROAlertModel.h */,
+				488680CA2619F4AE009417CB /* PROAlertModel.m */,
+				488680CB2619F4AE009417CB /* PROAlertView.h */,
+				488680CE2619F4AE009417CB /* PROAlertView.m */,
+			);
+			path = PROAlert;
+			sourceTree = "<group>";
+		};
+		4886816E2619F65F009417CB /* PROUIUtil */ = {
+			isa = PBXGroup;
+			children = (
+				4886816F2619F68D009417CB /* PROUIUtil.h */,
+				488681702619F68D009417CB /* PROUIUtil.m */,
+				488681762619F9B8009417CB /* PROUIFontUtil.h */,
+				488681772619F9B8009417CB /* PROUIFontUtil.m */,
+				4886817C2619FA48009417CB /* PROUIColorUtil.h */,
+				4886817D2619FA48009417CB /* PROUIColorUtil.m */,
+				488681822619FB16009417CB /* NSObject+PROColorStyle.h */,
+				488681832619FB16009417CB /* NSObject+PROColorStyle.m */,
+			);
+			path = PROUIUtil;
+			sourceTree = "<group>";
+		};
+		488681882619FFAE009417CB /* category */ = {
+			isa = PBXGroup;
+			children = (
+				48868189261A0017009417CB /* PROSafeCategory.h */,
+				4886818A261A0017009417CB /* PROSafeCategory.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		48868192261A070C009417CB /* PROToast */ = {
+			isa = PBXGroup;
+			children = (
+				48868195261A070C009417CB /* PROToastView.h */,
+				48868193261A070C009417CB /* PROToastView.m */,
+				48868196261A070C009417CB /* UIResponder+Toast.h */,
+				48868194261A070C009417CB /* UIResponder+Toast.m */,
+			);
+			path = PROToast;
+			sourceTree = "<group>";
+		};
 		48C6932B26198B1700180A8F = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +370,8 @@
 				48C6935226198B1900180A8F /* PromiseTests */,
 				48C6935D26198B1900180A8F /* PromiseUITests */,
 				48C6933526198B1700180A8F /* Products */,
+				566A949A469D44265942455D /* Pods */,
+				EED9A0C2BF9E216FB31C477F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,17 +388,16 @@
 		48C6933626198B1700180A8F /* Promise */ = {
 			isa = PBXGroup;
 			children = (
-				48C6933726198B1700180A8F /* AppDelegate.h */,
-				48C6933826198B1700180A8F /* AppDelegate.m */,
-				48C6933A26198B1700180A8F /* SceneDelegate.h */,
-				48C6933B26198B1700180A8F /* SceneDelegate.m */,
-				48C6933D26198B1700180A8F /* ViewController.h */,
-				48C6933E26198B1700180A8F /* ViewController.m */,
+				4886800E26198F5E009417CB /* Podfile */,
+				4886800326198DC3009417CB /* Common */,
+				48867FFF26198D6C009417CB /* Biz */,
+				48867FFE26198CF5009417CB /* launchManager */,
 				48C6934026198B1700180A8F /* Main.storyboard */,
 				48C6934326198B1900180A8F /* Assets.xcassets */,
 				48C6934526198B1900180A8F /* LaunchScreen.storyboard */,
 				48C6934826198B1900180A8F /* Info.plist */,
 				48C6934926198B1900180A8F /* main.m */,
+				4886803C2619933E009417CB /* PrefixHeader.pch */,
 			);
 			path = Promise;
 			sourceTree = "<group>";
@@ -137,6 +420,29 @@
 			path = PromiseUITests;
 			sourceTree = "<group>";
 		};
+		566A949A469D44265942455D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5178D91F8D13688DC0F9E469 /* Pods-Promise.debug.xcconfig */,
+				354C7849D2B9E5A43631E4D2 /* Pods-Promise.release.xcconfig */,
+				A78C341695267B1C2BB5CB71 /* Pods-Promise-PromiseUITests.debug.xcconfig */,
+				865383B0FFE5B7ED01733C35 /* Pods-Promise-PromiseUITests.release.xcconfig */,
+				5CB426F6FAB088C64E2F05EA /* Pods-PromiseTests.debug.xcconfig */,
+				A23F079B6C3BB4E79409C44F /* Pods-PromiseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EED9A0C2BF9E216FB31C477F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA666CE0290F4BC4AEA72 /* Pods_Promise.framework */,
+				8693158698F336119367D055 /* Pods_Promise_PromiseUITests.framework */,
+				D12C7E594461DEFDD8BA2BBE /* Pods_PromiseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +450,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48C6936326198B1900180A8F /* Build configuration list for PBXNativeTarget "Promise" */;
 			buildPhases = (
+				462492E9F85C112D77CF5BFD /* [CP] Check Pods Manifest.lock */,
 				48C6933026198B1700180A8F /* Sources */,
 				48C6933126198B1700180A8F /* Frameworks */,
 				48C6933226198B1700180A8F /* Resources */,
+				D814BA4F65FECEEC7E352E7E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +469,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48C6936626198B1900180A8F /* Build configuration list for PBXNativeTarget "PromiseTests" */;
 			buildPhases = (
+				C182099B2BE5D188CDD13A65 /* [CP] Check Pods Manifest.lock */,
 				48C6934B26198B1900180A8F /* Sources */,
 				48C6934C26198B1900180A8F /* Frameworks */,
 				48C6934D26198B1900180A8F /* Resources */,
@@ -179,9 +488,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48C6936926198B1900180A8F /* Build configuration list for PBXNativeTarget "PromiseUITests" */;
 			buildPhases = (
+				CEBF7ECA70CD57597F0A61A2 /* [CP] Check Pods Manifest.lock */,
 				48C6935626198B1900180A8F /* Sources */,
 				48C6935726198B1900180A8F /* Frameworks */,
 				48C6935826198B1900180A8F /* Resources */,
+				EA7334BE54A79269AEBD8D98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +552,7 @@
 			files = (
 				48C6934726198B1900180A8F /* LaunchScreen.storyboard in Resources */,
 				48C6934426198B1900180A8F /* Assets.xcassets in Resources */,
+				4886800F26198F5E009417CB /* Podfile in Resources */,
 				48C6934226198B1700180A8F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,15 +573,139 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		462492E9F85C112D77CF5BFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Promise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C182099B2BE5D188CDD13A65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PromiseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEBF7ECA70CD57597F0A61A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Promise-PromiseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D814BA4F65FECEEC7E352E7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Promise/Pods-Promise-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Promise/Pods-Promise-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Promise/Pods-Promise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA7334BE54A79269AEBD8D98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Promise-PromiseUITests/Pods-Promise-PromiseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Promise-PromiseUITests/Pods-Promise-PromiseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Promise-PromiseUITests/Pods-Promise-PromiseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		48C6933026198B1700180A8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48C6933F26198B1700180A8F /* ViewController.m in Sources */,
+				488680A62619ABBA009417CB /* PRORegisterViewModel.m in Sources */,
+				488680672619971D009417CB /* UITableViewCell+PRODequeue.m in Sources */,
+				488681782619F9B8009417CB /* PROUIFontUtil.m in Sources */,
+				48868197261A070C009417CB /* PROToastView.m in Sources */,
+				4886808026199972009417CB /* PRORegisterService.m in Sources */,
+				488680D02619F4AE009417CB /* PROAlertViewController.m in Sources */,
+				488681842619FB16009417CB /* NSObject+PROColorStyle.m in Sources */,
+				488680652619971D009417CB /* PROTableViewManager.m in Sources */,
+				4886817E2619FA48009417CB /* PROUIColorUtil.m in Sources */,
+				4886802C26199218009417CB /* PROLoginViewController.m in Sources */,
 				48C6933926198B1700180A8F /* AppDelegate.m in Sources */,
+				48868198261A070C009417CB /* UIResponder+Toast.m in Sources */,
+				488680682619971D009417CB /* PROTableViewBaseRow.m in Sources */,
+				488680CF2619F4AE009417CB /* PROAlertModel.m in Sources */,
 				48C6934A26198B1900180A8F /* main.m in Sources */,
+				4886803826199298009417CB /* PROBaseViewController.m in Sources */,
+				4886818B261A0017009417CB /* PROSafeCategory.m in Sources */,
+				4886809D2619AB8D009417CB /* PROLoginViewModel.m in Sources */,
+				488680662619971D009417CB /* PROTableViewBaseSection.m in Sources */,
+				488681712619F68D009417CB /* PROUIUtil.m in Sources */,
+				488680322619922C009417CB /* PRORegisterViewController.m in Sources */,
 				48C6933C26198B1700180A8F /* SceneDelegate.m in Sources */,
+				4886808A261999A8009417CB /* PROLoginService.m in Sources */,
+				488680D12619F4AE009417CB /* PROAlertView.m in Sources */,
+				488680952619A868009417CB /* PROAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,10 +874,13 @@
 		};
 		48C6936426198B1900180A8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5178D91F8D13688DC0F9E469 /* Pods-Promise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Promise/PrefixHeader.pch";
 				INFOPLIST_FILE = Promise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,10 +894,13 @@
 		};
 		48C6936526198B1900180A8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 354C7849D2B9E5A43631E4D2 /* Pods-Promise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Promise/PrefixHeader.pch";
 				INFOPLIST_FILE = Promise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -472,6 +914,7 @@
 		};
 		48C6936726198B1900180A8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB426F6FAB088C64E2F05EA /* Pods-PromiseTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -491,6 +934,7 @@
 		};
 		48C6936826198B1900180A8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A23F079B6C3BB4E79409C44F /* Pods-PromiseTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -510,6 +954,7 @@
 		};
 		48C6936A26198B1900180A8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A78C341695267B1C2BB5CB71 /* Pods-Promise-PromiseUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PromiseUITests/Info.plist;
@@ -527,6 +972,7 @@
 		};
 		48C6936B26198B1900180A8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 865383B0FFE5B7ED01733C35 /* Pods-Promise-PromiseUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PromiseUITests/Info.plist;

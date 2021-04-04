@@ -1,0 +1,32 @@
+PODS:
+  - AVOSCloud (12.3.3)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - YYCache (1.0.4)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AVOSCloud (= 12.3.3)
+  - Masonry (= 1.1.0)
+  - MBProgressHUD (= 1.2.0)
+  - YYCache (= 1.0.4)
+  - YYModel
+
+SPEC REPOS:
+  trunk:
+    - AVOSCloud
+    - Masonry
+    - MBProgressHUD
+    - YYCache
+    - YYModel
+
+SPEC CHECKSUMS:
+  AVOSCloud: 70bbf2d1ffcf587cb69e1eb3fff8f4e29046da44
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 0ac115fa52b3e81e26bd92204233e7d9cdbff6df
+
+COCOAPODS: 1.10.0
