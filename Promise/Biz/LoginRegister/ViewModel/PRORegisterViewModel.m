@@ -68,11 +68,18 @@
 }
 
 #pragma Request
-- (void)registerAccount {
+- (void)registerAccount:(PRORegisterWithPhoneNumberBlock)complate {
     __weak typeof(self) weakSelf = self;
     [PRORegisterService registerWithUsername:self.phoneNumber phoneNumber:self.phoneNumber password:self.password complate:^(BOOL succeeded, NSError * _Nullable error) {
         if (succeeded) {
             [PROAccount sharedInstance].phoneNumber = weakSelf.phoneNumber;
+            if (complate) {
+                complate(nil);
+            }
+            return;
+        }
+        if (complate) {
+            complate(error);
         }
     }];
 }

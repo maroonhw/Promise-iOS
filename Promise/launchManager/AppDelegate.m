@@ -6,7 +6,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "PRORegisterNumberViewController.h"
+#import "PROLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +21,21 @@
     [AVOSCloud setApplicationId:@"lsd35U0ivr7L0GdUSs9ePfA2-gzGzoHsz"
                       clientKey:@"ICbMovlvjMiyqWYPXIMnwk5q"
                 serverURLString:@"https://lsd35u0i.lc-cn-n1-shared.com"];
+    [self cerateAppWindow];
     return YES;
 }
 
+
+- (void)cerateAppWindow {
+    if (@available(iOS 13.0, *)) {
+        
+    } else {
+        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        self.window.rootViewController = [PROLoginViewController new];
+        self.window.backgroundColor = [UIColor whiteColor];
+        [self.window makeKeyAndVisible];
+    }
+}
 
 #pragma mark - UISceneSession lifecycle
 

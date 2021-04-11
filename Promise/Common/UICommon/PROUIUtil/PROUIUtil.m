@@ -19,6 +19,21 @@
     return screenHeight;
 }
 
++ (CGFloat)statusBarHeight {
+    return [UIApplication sharedApplication].statusBarFrame.size.height;
+}
+
++ (CGFloat)normalStatusBarHeight {
+    CGFloat statusBarHeight = [PROUIUtil statusBarHeight];
+    if (statusBarHeight == 40) {
+        return 20;
+    }
+    if (statusBarHeight == 0) {
+        return 20;
+    }
+    return statusBarHeight;
+}
+
 + (CGFloat)screenWidthCurOrientation {
     CGFloat screenWidth = [[UIScreen mainScreen] bounds].size.width;
     CGFloat mainWindowWidth = [PROUIUtil mainWindowWidth];
@@ -77,7 +92,61 @@
     return nil;
 }
 
++ (CGFloat)safeBottomHeight {
+    CGFloat bottomInset = 0;
+    if (MIsiPhoneXSeries) {
+        if (MScreenHeight == 812 || MScreenHeight == 896) {
+            bottomInset = 34;
+        } else if (MScreenWidth == 812 || MScreenWidth == 896) {
+            bottomInset = 21;
+        }
+    }
+    return bottomInset;
+}
 
+
+
++ (CGFloat)tabBarHeight {
+    if (MIsiPhoneXSeries) {
+        return 83.0;
+    }
+    return 49.0;
+}
+
++ (CGFloat)navigationBarHeight {
+    return 44.0;
+}
+
++ (BOOL)isiPhoneXSeries {
+    BOOL iPhoneXSeries = NO;
+    if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
+        return iPhoneXSeries;
+    }
+    
+    // 获取屏幕的宽度和高度，取较大一方判断是否为 812.0 或 896.0
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    CGFloat maxLength = screenWidth > screenHeight ? screenWidth : screenHeight;
+    if (maxLength == 812.0f || maxLength == 896.0f) {
+        iPhoneXSeries = YES;
+    }
+    
+    return iPhoneXSeries;
+}
+
++ (UIWindow *)appMainWindow {
+    UIWindow *appWindow = nil;
+    if ([[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(window)]) {
+        appWindow = [[[UIApplication sharedApplication] delegate] window];
+    }else {
+        appWindow = [[UIApplication sharedApplication] keyWindow];
+    }
+    return appWindow;
+}
+
++ (id<UIApplicationDelegate>)appDelegate {
+    return [[UIApplication sharedApplication] delegate];
+}
 
 #pragma mark - private
 + (CGFloat)mainWindowHeight {

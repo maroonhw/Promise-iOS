@@ -1,5 +1,5 @@
 //
-//  PRORegisterViewController.h
+//  PRORegisterNumberViewController.h
 //  Promise
 //
 //  Created by Hongwei Liu on 2021/4/4.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PRORegisterViewController : PROBaseViewController
+@interface PRORegisterNumberViewController : PROBaseViewController
 
 @end
 

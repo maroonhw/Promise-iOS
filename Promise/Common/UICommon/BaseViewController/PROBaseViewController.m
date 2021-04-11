@@ -16,8 +16,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(endEditTap:)];
+    [self.view addGestureRecognizer:tap];
 }
 
-
+- (void)endEditTap:(UITapGestureRecognizer*)sender {
+    [self.view endEditing:YES];
+}
 
 @end

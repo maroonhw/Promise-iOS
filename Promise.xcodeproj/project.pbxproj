@@ -10,9 +10,10 @@
 		13396BFD583C67D632F7B64F /* Pods_Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2BA666CE0290F4BC4AEA72 /* Pods_Promise.framework */; };
 		2BBB4805F3BC61C9DA52A043 /* Pods_PromiseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12C7E594461DEFDD8BA2BBE /* Pods_PromiseTests.framework */; };
 		3B201EE2B0331A4145D6BA95 /* Pods_Promise_PromiseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8693158698F336119367D055 /* Pods_Promise_PromiseUITests.framework */; };
+		4825E00D2621FEE700901EF6 /* PRONumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825E00C2621FEE700901EF6 /* PRONumberTextField.m */; };
 		4886800F26198F5E009417CB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4886800E26198F5E009417CB /* Podfile */; };
 		4886802C26199218009417CB /* PROLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886802B26199218009417CB /* PROLoginViewController.m */; };
-		488680322619922C009417CB /* PRORegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680312619922C009417CB /* PRORegisterViewController.m */; };
+		488680322619922C009417CB /* PRORegisterNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680312619922C009417CB /* PRORegisterNumberViewController.m */; };
 		4886803826199298009417CB /* PROBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886803726199298009417CB /* PROBaseViewController.m */; };
 		488680652619971D009417CB /* PROTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886805C2619971D009417CB /* PROTableViewManager.m */; };
 		488680662619971D009417CB /* PROTableViewBaseSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886805E2619971D009417CB /* PROTableViewBaseSection.m */; };
@@ -41,6 +42,12 @@
 		48C6934A26198B1900180A8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6934926198B1900180A8F /* main.m */; };
 		48C6935426198B1900180A8F /* PromiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6935326198B1900180A8F /* PromiseTests.m */; };
 		48C6935F26198B1900180A8F /* PromiseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6935E26198B1900180A8F /* PromiseUITests.m */; };
+		48CB7CAB2622D6490058D564 /* PROCusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CB7CAA2622D6490058D564 /* PROCusButton.m */; };
+		48CB7CB42622F0440058D564 /* PRORegisterPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CB7CB32622F0440058D564 /* PRORegisterPasswordViewController.m */; };
+		48CB7CBB26232C480058D564 /* PROBookUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CB7CBA26232C480058D564 /* PROBookUserInfoViewController.m */; };
+		48CB7CC326232D350058D564 /* PROTitleTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CB7CC226232D350058D564 /* PROTitleTextField.m */; };
+		48CB7CCC2623353F0058D564 /* PRODotSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CB7CCB2623353F0058D564 /* PRODotSelectView.m */; };
+		48CB7CD326233FC40058D564 /* PROBookUserInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CB7CD226233FC40058D564 /* PROBookUserInfoViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +69,13 @@
 
 /* Begin PBXFileReference section */
 		354C7849D2B9E5A43631E4D2 /* Pods-Promise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promise.release.xcconfig"; path = "Target Support Files/Pods-Promise/Pods-Promise.release.xcconfig"; sourceTree = "<group>"; };
+		4825E00B2621FEE700901EF6 /* PRONumberTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRONumberTextField.h; sourceTree = "<group>"; };
+		4825E00C2621FEE700901EF6 /* PRONumberTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRONumberTextField.m; sourceTree = "<group>"; };
 		4886800E26198F5E009417CB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4886802A26199218009417CB /* PROLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROLoginViewController.h; sourceTree = "<group>"; };
 		4886802B26199218009417CB /* PROLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROLoginViewController.m; sourceTree = "<group>"; };
-		488680302619922C009417CB /* PRORegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRORegisterViewController.h; sourceTree = "<group>"; };
-		488680312619922C009417CB /* PRORegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRORegisterViewController.m; sourceTree = "<group>"; };
+		488680302619922C009417CB /* PRORegisterNumberViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRORegisterNumberViewController.h; sourceTree = "<group>"; };
+		488680312619922C009417CB /* PRORegisterNumberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRORegisterNumberViewController.m; sourceTree = "<group>"; };
 		4886803626199298009417CB /* PROBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROBaseViewController.h; sourceTree = "<group>"; };
 		4886803726199298009417CB /* PROBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROBaseViewController.m; sourceTree = "<group>"; };
 		4886803C2619933E009417CB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -126,6 +135,18 @@
 		48C6935A26198B1900180A8F /* PromiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromiseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C6935E26198B1900180A8F /* PromiseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PromiseUITests.m; sourceTree = "<group>"; };
 		48C6936026198B1900180A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48CB7CA92622D6490058D564 /* PROCusButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROCusButton.h; sourceTree = "<group>"; };
+		48CB7CAA2622D6490058D564 /* PROCusButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROCusButton.m; sourceTree = "<group>"; };
+		48CB7CB22622F0440058D564 /* PRORegisterPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRORegisterPasswordViewController.h; sourceTree = "<group>"; };
+		48CB7CB32622F0440058D564 /* PRORegisterPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRORegisterPasswordViewController.m; sourceTree = "<group>"; };
+		48CB7CB926232C480058D564 /* PROBookUserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROBookUserInfoViewController.h; sourceTree = "<group>"; };
+		48CB7CBA26232C480058D564 /* PROBookUserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROBookUserInfoViewController.m; sourceTree = "<group>"; };
+		48CB7CC126232D350058D564 /* PROTitleTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROTitleTextField.h; sourceTree = "<group>"; };
+		48CB7CC226232D350058D564 /* PROTitleTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROTitleTextField.m; sourceTree = "<group>"; };
+		48CB7CCA2623353F0058D564 /* PRODotSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRODotSelectView.h; sourceTree = "<group>"; };
+		48CB7CCB2623353F0058D564 /* PRODotSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRODotSelectView.m; sourceTree = "<group>"; };
+		48CB7CD126233FC40058D564 /* PROBookUserInfoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROBookUserInfoViewModel.h; sourceTree = "<group>"; };
+		48CB7CD226233FC40058D564 /* PROBookUserInfoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROBookUserInfoViewModel.m; sourceTree = "<group>"; };
 		5178D91F8D13688DC0F9E469 /* Pods-Promise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promise.debug.xcconfig"; path = "Target Support Files/Pods-Promise/Pods-Promise.debug.xcconfig"; sourceTree = "<group>"; };
 		5CB426F6FAB088C64E2F05EA /* Pods-PromiseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromiseTests.debug.xcconfig"; path = "Target Support Files/Pods-PromiseTests/Pods-PromiseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		865383B0FFE5B7ED01733C35 /* Pods-Promise-PromiseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promise-PromiseUITests.release.xcconfig"; path = "Target Support Files/Pods-Promise-PromiseUITests/Pods-Promise-PromiseUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +185,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4825E00A2621FE9B00901EF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4825E00B2621FEE700901EF6 /* PRONumberTextField.h */,
+				4825E00C2621FEE700901EF6 /* PRONumberTextField.m */,
+				48CB7CA92622D6490058D564 /* PROCusButton.h */,
+				48CB7CAA2622D6490058D564 /* PROCusButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		48867FFE26198CF5009417CB /* launchManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +210,7 @@
 		48867FFF26198D6C009417CB /* Biz */ = {
 			isa = PBXGroup;
 			children = (
+				48CB7CB826232BDD0058D564 /* BookUserInfo */,
 				4886800226198D96009417CB /* Me */,
 				4886800126198D8D009417CB /* Home */,
 				4886800026198D79009417CB /* LoginRegister */,
@@ -188,6 +221,7 @@
 		4886800026198D79009417CB /* LoginRegister */ = {
 			isa = PBXGroup;
 			children = (
+				4825E00A2621FE9B00901EF6 /* View */,
 				4886809A2619AB6B009417CB /* ViewModel */,
 				488680992619AB25009417CB /* ViewController */,
 			);
@@ -298,8 +332,10 @@
 			children = (
 				4886802A26199218009417CB /* PROLoginViewController.h */,
 				4886802B26199218009417CB /* PROLoginViewController.m */,
-				488680302619922C009417CB /* PRORegisterViewController.h */,
-				488680312619922C009417CB /* PRORegisterViewController.m */,
+				488680302619922C009417CB /* PRORegisterNumberViewController.h */,
+				488680312619922C009417CB /* PRORegisterNumberViewController.m */,
+				48CB7CB22622F0440058D564 /* PRORegisterPasswordViewController.h */,
+				48CB7CB32622F0440058D564 /* PRORegisterPasswordViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -418,6 +454,45 @@
 				48C6936026198B1900180A8F /* Info.plist */,
 			);
 			path = PromiseUITests;
+			sourceTree = "<group>";
+		};
+		48CB7CB826232BDD0058D564 /* BookUserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				48CB7CD026233FA60058D564 /* ViewModel */,
+				48CB7CC026232D010058D564 /* View */,
+				48CB7CBF26232CEA0058D564 /* ViewController */,
+			);
+			path = BookUserInfo;
+			sourceTree = "<group>";
+		};
+		48CB7CBF26232CEA0058D564 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48CB7CB926232C480058D564 /* PROBookUserInfoViewController.h */,
+				48CB7CBA26232C480058D564 /* PROBookUserInfoViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		48CB7CC026232D010058D564 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48CB7CC126232D350058D564 /* PROTitleTextField.h */,
+				48CB7CC226232D350058D564 /* PROTitleTextField.m */,
+				48CB7CCA2623353F0058D564 /* PRODotSelectView.h */,
+				48CB7CCB2623353F0058D564 /* PRODotSelectView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48CB7CD026233FA60058D564 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				48CB7CD126233FC40058D564 /* PROBookUserInfoViewModel.h */,
+				48CB7CD226233FC40058D564 /* PROBookUserInfoViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		566A949A469D44265942455D /* Pods */ = {
@@ -682,14 +757,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				488680A62619ABBA009417CB /* PRORegisterViewModel.m in Sources */,
+				48CB7CAB2622D6490058D564 /* PROCusButton.m in Sources */,
+				48CB7CB42622F0440058D564 /* PRORegisterPasswordViewController.m in Sources */,
 				488680672619971D009417CB /* UITableViewCell+PRODequeue.m in Sources */,
 				488681782619F9B8009417CB /* PROUIFontUtil.m in Sources */,
 				48868197261A070C009417CB /* PROToastView.m in Sources */,
 				4886808026199972009417CB /* PRORegisterService.m in Sources */,
 				488680D02619F4AE009417CB /* PROAlertViewController.m in Sources */,
+				48CB7CD326233FC40058D564 /* PROBookUserInfoViewModel.m in Sources */,
 				488681842619FB16009417CB /* NSObject+PROColorStyle.m in Sources */,
 				488680652619971D009417CB /* PROTableViewManager.m in Sources */,
+				4825E00D2621FEE700901EF6 /* PRONumberTextField.m in Sources */,
 				4886817E2619FA48009417CB /* PROUIColorUtil.m in Sources */,
+				48CB7CCC2623353F0058D564 /* PRODotSelectView.m in Sources */,
 				4886802C26199218009417CB /* PROLoginViewController.m in Sources */,
 				48C6933926198B1700180A8F /* AppDelegate.m in Sources */,
 				48868198261A070C009417CB /* UIResponder+Toast.m in Sources */,
@@ -701,7 +781,9 @@
 				4886809D2619AB8D009417CB /* PROLoginViewModel.m in Sources */,
 				488680662619971D009417CB /* PROTableViewBaseSection.m in Sources */,
 				488681712619F68D009417CB /* PROUIUtil.m in Sources */,
-				488680322619922C009417CB /* PRORegisterViewController.m in Sources */,
+				48CB7CBB26232C480058D564 /* PROBookUserInfoViewController.m in Sources */,
+				48CB7CC326232D350058D564 /* PROTitleTextField.m in Sources */,
+				488680322619922C009417CB /* PRORegisterNumberViewController.m in Sources */,
 				48C6933C26198B1700180A8F /* SceneDelegate.m in Sources */,
 				4886808A261999A8009417CB /* PROLoginService.m in Sources */,
 				488680D12619F4AE009417CB /* PROAlertView.m in Sources */,
@@ -811,7 +893,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -864,7 +946,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -878,7 +960,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T96CPF59T6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Promise/PrefixHeader.pch";
 				INFOPLIST_FILE = Promise/Info.plist;
@@ -886,8 +970,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hongweiLiu.com.Promise;
+				PRODUCT_BUNDLE_IDENTIFIER = hongweiLiu.com.Promise.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -898,7 +983,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T96CPF59T6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Promise/PrefixHeader.pch";
 				INFOPLIST_FILE = Promise/Info.plist;
@@ -906,8 +993,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hongweiLiu.com.Promise;
+				PRODUCT_BUNDLE_IDENTIFIER = hongweiLiu.com.Promise.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

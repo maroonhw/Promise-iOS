@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+typedef void (^PRORegisterWithPhoneNumberBlock)(NSError * _Nullable error);
 
 @interface PRORegisterViewModel : NSObject
 
@@ -16,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *confirmPassword;
 
 
-- (void)registerAccount;
+- (void)registerAccount:(PRORegisterWithPhoneNumberBlock)complate;
 
 - (BOOL)verifyPassword;
 

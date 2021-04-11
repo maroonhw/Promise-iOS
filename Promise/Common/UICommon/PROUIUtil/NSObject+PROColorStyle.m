@@ -10,7 +10,7 @@
 @implementation NSObject (PROColorStyle)
 
 + (UIColor *)apc_themeColor {
-    return  [PROUIColorUtil getColorByName:@"#1492FD"];
+    return  [PROUIColorUtil getColorByName:@"#44606b"];
 }
 
 
