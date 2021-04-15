@@ -11,6 +11,7 @@
 		2BBB4805F3BC61C9DA52A043 /* Pods_PromiseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12C7E594461DEFDD8BA2BBE /* Pods_PromiseTests.framework */; };
 		3B201EE2B0331A4145D6BA95 /* Pods_Promise_PromiseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8693158698F336119367D055 /* Pods_Promise_PromiseUITests.framework */; };
 		4825E00D2621FEE700901EF6 /* PRONumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4825E00C2621FEE700901EF6 /* PRONumberTextField.m */; };
+		484D4E7E26247FB800150F4A /* PROAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 484D4E7D26247FB800150F4A /* PROAvatarView.m */; };
 		4886800F26198F5E009417CB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4886800E26198F5E009417CB /* Podfile */; };
 		4886802C26199218009417CB /* PROLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886802B26199218009417CB /* PROLoginViewController.m */; };
 		488680322619922C009417CB /* PRORegisterNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680312619922C009417CB /* PRORegisterNumberViewController.m */; };
@@ -24,9 +25,6 @@
 		488680952619A868009417CB /* PROAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680942619A868009417CB /* PROAccount.m */; };
 		4886809D2619AB8D009417CB /* PROLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886809C2619AB8D009417CB /* PROLoginViewModel.m */; };
 		488680A62619ABBA009417CB /* PRORegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680A52619ABBA009417CB /* PRORegisterViewModel.m */; };
-		488680CF2619F4AE009417CB /* PROAlertModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680CA2619F4AE009417CB /* PROAlertModel.m */; };
-		488680D02619F4AE009417CB /* PROAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680CD2619F4AE009417CB /* PROAlertViewController.m */; };
-		488680D12619F4AE009417CB /* PROAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 488680CE2619F4AE009417CB /* PROAlertView.m */; };
 		488681712619F68D009417CB /* PROUIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 488681702619F68D009417CB /* PROUIUtil.m */; };
 		488681782619F9B8009417CB /* PROUIFontUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 488681772619F9B8009417CB /* PROUIFontUtil.m */; };
 		4886817E2619FA48009417CB /* PROUIColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886817D2619FA48009417CB /* PROUIColorUtil.m */; };
@@ -34,9 +32,10 @@
 		4886818B261A0017009417CB /* PROSafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886818A261A0017009417CB /* PROSafeCategory.m */; };
 		48868197261A070C009417CB /* PROToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48868193261A070C009417CB /* PROToastView.m */; };
 		48868198261A070C009417CB /* UIResponder+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 48868194261A070C009417CB /* UIResponder+Toast.m */; };
+		488DBC43262718C2000A8411 /* PROAlertModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 488DBC3E262718C2000A8411 /* PROAlertModel.m */; };
+		488DBC44262718C2000A8411 /* PROAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488DBC41262718C2000A8411 /* PROAlertViewController.m */; };
+		488DBC45262718C2000A8411 /* PROAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 488DBC42262718C2000A8411 /* PROAlertView.m */; };
 		48C6933926198B1700180A8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6933826198B1700180A8F /* AppDelegate.m */; };
-		48C6933C26198B1700180A8F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6933B26198B1700180A8F /* SceneDelegate.m */; };
-		48C6934226198B1700180A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C6934026198B1700180A8F /* Main.storyboard */; };
 		48C6934426198B1900180A8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C6934326198B1900180A8F /* Assets.xcassets */; };
 		48C6934726198B1900180A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C6934526198B1900180A8F /* LaunchScreen.storyboard */; };
 		48C6934A26198B1900180A8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6934926198B1900180A8F /* main.m */; };
@@ -71,6 +70,8 @@
 		354C7849D2B9E5A43631E4D2 /* Pods-Promise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promise.release.xcconfig"; path = "Target Support Files/Pods-Promise/Pods-Promise.release.xcconfig"; sourceTree = "<group>"; };
 		4825E00B2621FEE700901EF6 /* PRONumberTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRONumberTextField.h; sourceTree = "<group>"; };
 		4825E00C2621FEE700901EF6 /* PRONumberTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRONumberTextField.m; sourceTree = "<group>"; };
+		484D4E7C26247FB800150F4A /* PROAvatarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROAvatarView.h; sourceTree = "<group>"; };
+		484D4E7D26247FB800150F4A /* PROAvatarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROAvatarView.m; sourceTree = "<group>"; };
 		4886800E26198F5E009417CB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4886802A26199218009417CB /* PROLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROLoginViewController.h; sourceTree = "<group>"; };
 		4886802B26199218009417CB /* PROLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROLoginViewController.m; sourceTree = "<group>"; };
@@ -99,12 +100,6 @@
 		4886809C2619AB8D009417CB /* PROLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROLoginViewModel.m; sourceTree = "<group>"; };
 		488680A42619ABBA009417CB /* PRORegisterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRORegisterViewModel.h; sourceTree = "<group>"; };
 		488680A52619ABBA009417CB /* PRORegisterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRORegisterViewModel.m; sourceTree = "<group>"; };
-		488680C92619F4AE009417CB /* PROAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROAlertViewController.h; sourceTree = "<group>"; };
-		488680CA2619F4AE009417CB /* PROAlertModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROAlertModel.m; sourceTree = "<group>"; };
-		488680CB2619F4AE009417CB /* PROAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROAlertView.h; sourceTree = "<group>"; };
-		488680CC2619F4AE009417CB /* PROAlertModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROAlertModel.h; sourceTree = "<group>"; };
-		488680CD2619F4AE009417CB /* PROAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROAlertViewController.m; sourceTree = "<group>"; };
-		488680CE2619F4AE009417CB /* PROAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROAlertView.m; sourceTree = "<group>"; };
 		4886816F2619F68D009417CB /* PROUIUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROUIUtil.h; sourceTree = "<group>"; };
 		488681702619F68D009417CB /* PROUIUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROUIUtil.m; sourceTree = "<group>"; };
 		488681762619F9B8009417CB /* PROUIFontUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROUIFontUtil.h; sourceTree = "<group>"; };
@@ -119,12 +114,16 @@
 		48868194261A070C009417CB /* UIResponder+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Toast.m"; sourceTree = "<group>"; };
 		48868195261A070C009417CB /* PROToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROToastView.h; sourceTree = "<group>"; };
 		48868196261A070C009417CB /* UIResponder+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Toast.h"; sourceTree = "<group>"; };
+		488DBC3C262718C2000A8411 /* PROAlertConstantsDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROAlertConstantsDefine.h; sourceTree = "<group>"; };
+		488DBC3D262718C2000A8411 /* PROAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROAlertViewController.h; sourceTree = "<group>"; };
+		488DBC3E262718C2000A8411 /* PROAlertModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROAlertModel.m; sourceTree = "<group>"; };
+		488DBC3F262718C2000A8411 /* PROAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROAlertView.h; sourceTree = "<group>"; };
+		488DBC40262718C2000A8411 /* PROAlertModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROAlertModel.h; sourceTree = "<group>"; };
+		488DBC41262718C2000A8411 /* PROAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROAlertViewController.m; sourceTree = "<group>"; };
+		488DBC42262718C2000A8411 /* PROAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROAlertView.m; sourceTree = "<group>"; };
 		48C6933426198B1700180A8F /* Promise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Promise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C6933726198B1700180A8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48C6933826198B1700180A8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		48C6933A26198B1700180A8F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		48C6933B26198B1700180A8F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		48C6934126198B1700180A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48C6934326198B1900180A8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48C6934626198B1900180A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48C6934826198B1900180A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -199,8 +198,6 @@
 		48867FFE26198CF5009417CB /* launchManager */ = {
 			isa = PBXGroup;
 			children = (
-				48C6933A26198B1700180A8F /* SceneDelegate.h */,
-				48C6933B26198B1700180A8F /* SceneDelegate.m */,
 				48C6933726198B1700180A8F /* AppDelegate.h */,
 				48C6933826198B1700180A8F /* AppDelegate.m */,
 			);
@@ -264,9 +261,9 @@
 		4886800526198DF7009417CB /* UICommon */ = {
 			isa = PBXGroup;
 			children = (
+				488DBC3B262718C2000A8411 /* PROAlert */,
 				48868192261A070C009417CB /* PROToast */,
 				4886816E2619F65F009417CB /* PROUIUtil */,
-				488680C82619F4AE009417CB /* PROAlert */,
 				4886805B2619971D009417CB /* PROTableViewManager */,
 				4886804326199605009417CB /* BaseViewController */,
 			);
@@ -351,19 +348,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		488680C82619F4AE009417CB /* PROAlert */ = {
-			isa = PBXGroup;
-			children = (
-				488680C92619F4AE009417CB /* PROAlertViewController.h */,
-				488680CD2619F4AE009417CB /* PROAlertViewController.m */,
-				488680CC2619F4AE009417CB /* PROAlertModel.h */,
-				488680CA2619F4AE009417CB /* PROAlertModel.m */,
-				488680CB2619F4AE009417CB /* PROAlertView.h */,
-				488680CE2619F4AE009417CB /* PROAlertView.m */,
-			);
-			path = PROAlert;
-			sourceTree = "<group>";
-		};
 		4886816E2619F65F009417CB /* PROUIUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +383,20 @@
 			path = PROToast;
 			sourceTree = "<group>";
 		};
+		488DBC3B262718C2000A8411 /* PROAlert */ = {
+			isa = PBXGroup;
+			children = (
+				488DBC3C262718C2000A8411 /* PROAlertConstantsDefine.h */,
+				488DBC3D262718C2000A8411 /* PROAlertViewController.h */,
+				488DBC41262718C2000A8411 /* PROAlertViewController.m */,
+				488DBC40262718C2000A8411 /* PROAlertModel.h */,
+				488DBC3E262718C2000A8411 /* PROAlertModel.m */,
+				488DBC3F262718C2000A8411 /* PROAlertView.h */,
+				488DBC42262718C2000A8411 /* PROAlertView.m */,
+			);
+			path = PROAlert;
+			sourceTree = "<group>";
+		};
 		48C6932B26198B1700180A8F = {
 			isa = PBXGroup;
 			children = (
@@ -428,7 +426,6 @@
 				4886800326198DC3009417CB /* Common */,
 				48867FFF26198D6C009417CB /* Biz */,
 				48867FFE26198CF5009417CB /* launchManager */,
-				48C6934026198B1700180A8F /* Main.storyboard */,
 				48C6934326198B1900180A8F /* Assets.xcassets */,
 				48C6934526198B1900180A8F /* LaunchScreen.storyboard */,
 				48C6934826198B1900180A8F /* Info.plist */,
@@ -482,6 +479,8 @@
 				48CB7CC226232D350058D564 /* PROTitleTextField.m */,
 				48CB7CCA2623353F0058D564 /* PRODotSelectView.h */,
 				48CB7CCB2623353F0058D564 /* PRODotSelectView.m */,
+				484D4E7C26247FB800150F4A /* PROAvatarView.h */,
+				484D4E7D26247FB800150F4A /* PROAvatarView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -628,7 +627,6 @@
 				48C6934726198B1900180A8F /* LaunchScreen.storyboard in Resources */,
 				48C6934426198B1900180A8F /* Assets.xcassets in Resources */,
 				4886800F26198F5E009417CB /* Podfile in Resources */,
-				48C6934226198B1700180A8F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,21 +758,21 @@
 				48CB7CAB2622D6490058D564 /* PROCusButton.m in Sources */,
 				48CB7CB42622F0440058D564 /* PRORegisterPasswordViewController.m in Sources */,
 				488680672619971D009417CB /* UITableViewCell+PRODequeue.m in Sources */,
+				484D4E7E26247FB800150F4A /* PROAvatarView.m in Sources */,
 				488681782619F9B8009417CB /* PROUIFontUtil.m in Sources */,
 				48868197261A070C009417CB /* PROToastView.m in Sources */,
 				4886808026199972009417CB /* PRORegisterService.m in Sources */,
-				488680D02619F4AE009417CB /* PROAlertViewController.m in Sources */,
 				48CB7CD326233FC40058D564 /* PROBookUserInfoViewModel.m in Sources */,
 				488681842619FB16009417CB /* NSObject+PROColorStyle.m in Sources */,
 				488680652619971D009417CB /* PROTableViewManager.m in Sources */,
 				4825E00D2621FEE700901EF6 /* PRONumberTextField.m in Sources */,
 				4886817E2619FA48009417CB /* PROUIColorUtil.m in Sources */,
 				48CB7CCC2623353F0058D564 /* PRODotSelectView.m in Sources */,
+				488DBC45262718C2000A8411 /* PROAlertView.m in Sources */,
 				4886802C26199218009417CB /* PROLoginViewController.m in Sources */,
 				48C6933926198B1700180A8F /* AppDelegate.m in Sources */,
 				48868198261A070C009417CB /* UIResponder+Toast.m in Sources */,
 				488680682619971D009417CB /* PROTableViewBaseRow.m in Sources */,
-				488680CF2619F4AE009417CB /* PROAlertModel.m in Sources */,
 				48C6934A26198B1900180A8F /* main.m in Sources */,
 				4886803826199298009417CB /* PROBaseViewController.m in Sources */,
 				4886818B261A0017009417CB /* PROSafeCategory.m in Sources */,
@@ -784,10 +782,10 @@
 				48CB7CBB26232C480058D564 /* PROBookUserInfoViewController.m in Sources */,
 				48CB7CC326232D350058D564 /* PROTitleTextField.m in Sources */,
 				488680322619922C009417CB /* PRORegisterNumberViewController.m in Sources */,
-				48C6933C26198B1700180A8F /* SceneDelegate.m in Sources */,
+				488DBC44262718C2000A8411 /* PROAlertViewController.m in Sources */,
 				4886808A261999A8009417CB /* PROLoginService.m in Sources */,
-				488680D12619F4AE009417CB /* PROAlertView.m in Sources */,
 				488680952619A868009417CB /* PROAccount.m in Sources */,
+				488DBC43262718C2000A8411 /* PROAlertModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,14 +821,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		48C6934026198B1700180A8F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				48C6934126198B1700180A8F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		48C6934526198B1900180A8F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

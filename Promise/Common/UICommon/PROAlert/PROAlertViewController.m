@@ -2,8 +2,8 @@
 //  PROAlertViewController.m
 //  AirPayCounter
 //
-//  Created by HuiCao on 2019/4/22.
-//  Copyright © 2021 Hongwei Liu. All rights reserved.
+//  Created by Hongwei Liu on 2019/4/22.
+//  Copyright © 2019 Shopee. All rights reserved.
 //
 
 #import "PROAlertViewController.h"
@@ -56,7 +56,7 @@ static NSMutableArray *globalAlertPoolArray = nil;
 #pragma mark - PROAlertViewController
 @interface PROAlertViewController ()
 
-@property (nonatomic, strong) UIWindow *window;
+
 @property (nonatomic, strong) PROAlertModel *model;
 @property (nonatomic, strong) PROAlertView *alertView;
 
@@ -86,7 +86,9 @@ static NSMutableArray *globalAlertPoolArray = nil;
     [super viewDidLoad];
     self.view.backgroundColor = MCOLOR_ALPHA(@"#000000", 0.4);
     [self setupSubviews];
+
 }
+
 
 - (void)appWillEnterForground:(NSNotification *)notification {
     if (self.model.backFromBackground) {
@@ -107,20 +109,13 @@ static NSMutableArray *globalAlertPoolArray = nil;
     self.window.hidden = NO;
     self.window.rootViewController = self;
     [self.window makeKeyAndVisible];
-    
+
     self.model.show = YES;
     self.view.alpha = 0;
     self.alertView.alpha = 0;
-    self.view.transform = CGAffineTransformMakeScale(1.1, 1.1);
-    if (self.model.rotation) {
-        [self.alertView updateContainerMasonry];
-        self.alertView.transform = CGAffineTransformMakeRotation(M_PI_2);
-    }
-    
     [UIView animateWithDuration:0.3 animations:^{
         self.alertView.alpha = 1;
         self.view.alpha = 1;
-        self.view.transform = CGAffineTransformIdentity;
     }];
     if (self.model.showHandler) {
         self.model.showHandler();
@@ -142,7 +137,6 @@ static NSMutableArray *globalAlertPoolArray = nil;
             }];
             [alertController addAction:action];
         }];
-        
         [[PROUIUtil topViewController] presentViewController:alertController animated:YES completion:nil];
     };
 }
@@ -212,6 +206,7 @@ static NSMutableArray *globalAlertPoolArray = nil;
 #pragma mark - Getters
 - (UIWindow *)window {
     if (!_window) {
+        
         _window = [[UIWindow alloc] initWithFrame:[UIApplication sharedApplication].delegate.window.frame];
         _window.backgroundColor = [UIColor clearColor];
         _window.windowLevel = UIWindowLevelAlert;
@@ -235,9 +230,37 @@ static NSMutableArray *globalAlertPoolArray = nil;
     };
 }
 
+- (PROAlertViewController * _Nonnull (^)(NSURL * _Nullable))topImageURL {
+    return ^PROAlertViewController * _Nonnull (NSURL * _Nullable topImageURL) {
+        self.model.topImageURL = topImageURL;
+        return self;
+    };
+}
+
 - (PROAlertViewController * _Nonnull (^)(NSString * _Nullable))alertTitle {
     return ^PROAlertViewController * _Nonnull (NSString * _Nullable alertTitle) {
         self.model.title = alertTitle;
+        return self;
+    };
+}
+
+- (PROAlertViewController * _Nonnull (^)(NSString * _Nullable))titleTextColor {
+    return ^PROAlertViewController * _Nonnull (NSString * _Nullable titleTextColor) {
+        self.model.titleTextColor = titleTextColor;
+        return self;
+    };
+}
+
+- (PROAlertViewController * _Nonnull (^)(CGFloat))titleFontSize {
+    return ^PROAlertViewController * _Nonnull (CGFloat titleFontSize) {
+        self.model.titleFontSize = titleFontSize;
+        return self;
+    };
+}
+
+- (PROAlertViewController * _Nonnull (^)(PROAlertFontWeight))titleFontWeight {
+    return ^PROAlertViewController * _Nonnull (NSUInteger titleFontWeight) {
+        self.model.titleFontWeight = titleFontWeight;
         return self;
     };
 }
@@ -249,9 +272,37 @@ static NSMutableArray *globalAlertPoolArray = nil;
     };
 }
 
-- (PROAlertViewController * _Nonnull (^)(BOOL))alertRotation {
-    return ^PROAlertViewController * _Nonnull (BOOL alertRotation) {
-        self.model.rotation = alertRotation;
+- (PROAlertViewController * _Nonnull (^)(NSString * _Nullable))messageTextColor {
+    return ^PROAlertViewController * _Nonnull (NSString * _Nullable messageTextColor) {
+        self.model.messageTextColor = messageTextColor;
+        return self;
+    };
+}
+
+- (PROAlertViewController * _Nonnull (^)(CGFloat))messageFontSize {
+    return ^PROAlertViewController * _Nonnull (CGFloat messageFontSize) {
+        self.model.messageFontSize = messageFontSize;
+        return self;
+    };
+}
+
+- (PROAlertViewController * _Nonnull (^)(PROAlertFontWeight))messageFontWeight {
+    return ^PROAlertViewController * _Nonnull (NSUInteger messageFontWeight) {
+        self.model.messageFontWeight = messageFontWeight;
+        return self;
+    };
+}
+
+- (PROAlertViewController * _Nonnull (^)(NSTextAlignment))messageTextAlignment {
+    return ^PROAlertViewController * _Nonnull (NSTextAlignment messageTextAlignment) {
+        self.model.messageTextAlignment = messageTextAlignment;
+        return self;
+    };
+}
+
+- (PROAlertViewController * _Nonnull (^)(NSNumber * _Nullable))imageRatio {
+    return ^PROAlertViewController * _Nonnull (NSNumber * _Nullable imageRatio) {
+        self.model.imageRatio = imageRatio;
         return self;
     };
 }

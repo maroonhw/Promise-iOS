@@ -12,13 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSObject (PROColorStyle)
 
 /// 获取主题色，默认：1492FD
-+ (UIColor *)apc_themeColor;
++ (UIColor *)pro_themeColor;
 
 /// 背景色，默认：F5F5F5
-+ (UIColor *)apc_backgroundColor;
++ (UIColor *)pro_backgroundColor;
 
 /// 正常字体色，MCOLOR_ALPHA(@"#000000", 0.87)
-+ (UIColor *)apc_normalTitleColor;
++ (UIColor *)pro_normalTitleColor;
 
 @end
 

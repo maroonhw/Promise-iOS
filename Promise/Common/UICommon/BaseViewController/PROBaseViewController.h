@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PROBaseViewController : UIViewController
 
+@property (nonatomic, assign) BOOL needBackButton;
+
+@property (nonatomic, copy) NSString *pageTitle;
+
 @end
 
 NS_ASSUME_NONNULL_END

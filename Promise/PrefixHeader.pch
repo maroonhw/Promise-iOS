@@ -17,7 +17,7 @@
 #import "NSObject+PROColorStyle.h"
 #import "PROSafeCategory.h"
 #import "PROToastView.h"
-
+#import "PROAlertViewController.h"
 
 ///  第三方库头文件
 #import <AVOSCloud/AVOSCloud.h>

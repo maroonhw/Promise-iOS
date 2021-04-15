@@ -1,8 +1,4 @@
-//
-//  UIResponder+APCToast.m
-//  APCUIKit
-//
-//
+
 
 #import "UIResponder+Toast.h"
 #import <objc/runtime.h>

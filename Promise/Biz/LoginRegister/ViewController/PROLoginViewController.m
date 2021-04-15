@@ -11,6 +11,8 @@
 #import "PROCusButton.h"
 #import "PRORegisterNumberViewController.h"
 
+#import "PRORegisterService.h"
+
 @interface PROLoginViewController ()<UITextViewDelegate>
 
 @property (nonatomic, strong) UITextView *titleTextView;

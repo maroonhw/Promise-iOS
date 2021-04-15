@@ -2,13 +2,12 @@
 //  PROAlertView.m
 //  AirPayCounter
 //
-//  Created by HuiCao on 2019/6/13.
-//  Copyright © 2021 Hongwei Liu. All rights reserved.
+//  Created by Hongwei Liu on 2019/6/13.
+//  Copyright © 2019 Shopee. All rights reserved.
 //
 
 #import "PROAlertView.h"
 #import "PROAlertModel.h"
-
 
 @interface PROAlertView ()
 
@@ -22,6 +21,10 @@
 @property (nonatomic, strong) UIView *hLineView;
 @property (nonatomic, strong) UIView *vLineView;
 
+@property (nonatomic, strong) UIColor *titleLabelColor;
+@property (nonatomic, strong) UIFont *titleFont;
+@property (nonatomic, strong) UIColor *messageLabelColor;
+@property (nonatomic, strong) UIFont *messageFont;
 @end
 
 @implementation PROAlertView
@@ -108,7 +111,7 @@
         if (NULLString(self.model.title)) {
             make.top.mas_equalTo(self.topImageView.mas_bottom).mas_offset(20);
         } else {
-            make.top.mas_equalTo(self.titleLabel.mas_bottom).mas_offset(16);
+            make.top.mas_equalTo(self.titleLabel.mas_bottom).mas_offset(12);
         }
         make.height.mas_equalTo([self messageHeightWith:self.model.message]);
     }];
@@ -124,16 +127,16 @@
     messageHeight = [self messageHeightWith:message];
     totalHeight = titleHeight + messageHeight;
     if (title && message) {
-        totalHeight += 60;
+        totalHeight += 56;
     } else if(title){
-        totalHeight += 40;
+        totalHeight += 44;
     } else if(message){
         totalHeight += 44;
     } else {
         totalHeight += 20;
     }
-    if (self.model.topImage) {
-        totalHeight += self.topImageView.frame.size.width / 2;
+    if ([self.model hasTopImage]) {
+        totalHeight += self.topImageView.frame.size.width / self.model.imageRatio.floatValue;
     }
     return totalHeight + 46;
 }
@@ -187,7 +190,11 @@
         make.top.mas_equalTo(0);
         make.left.mas_equalTo(0);
         make.right.mas_equalTo(0);
-        if (self.model.topImage) make.height.mas_equalTo(self.topImageView.mas_width).dividedBy(2);
+        if ([self.model hasTopImage]) {
+            make.height.mas_equalTo(self.topImageView.mas_width).dividedBy(self.model.imageRatio.floatValue);
+        } else {
+            make.height.mas_equalTo(0);
+        }
     }];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(0);
@@ -202,7 +209,7 @@
         if (self.titleLabel.hidden) {
             make.top.mas_equalTo(self.topImageView.mas_bottom).mas_offset(20);
         } else {
-            make.top.mas_equalTo(self.titleLabel.mas_bottom).mas_offset(16);
+            make.top.mas_equalTo(self.titleLabel.mas_bottom).mas_offset(12);
         }
         make.bottom.mas_equalTo(self.rightButton.mas_top).mas_offset(-24);
     }];
@@ -244,6 +251,19 @@
             if (image) {
                 [_topImageView setImage:image];
             }
+        } else if (self.model.topImageURL) {
+//            UIImage *placeholder = [APCThemeM  imageInPod:kAPCUIKitBundleName imageNamge:@"alert_vc_placeholder"];
+//            mweakify(self);
+//            [_topImageView sd_setImageWithURL:self.model.topImageURL placeholderImage:placeholder completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+//                if (!error) {
+//                    mstrongify(self);
+//                    [self.topImageView setBackgroundColor:[UIColor whiteColor]];
+//                }
+//            }];
+            [_topImageView setBackgroundColor:MCOLOR_ALPHA(@"#000000", 0.09)];
+            [_topImageView setContentMode:UIViewContentModeScaleAspectFit];
+        } else {
+            [_topImageView setImage:nil];
         }
     }
     return _topImageView;
@@ -254,7 +274,7 @@
         _leftButton = [[UIButton alloc] init];
         [_leftButton addTarget:self action:@selector(leftButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
         [_leftButton setTitle:self.model.firstButtonTitle forState:UIControlStateNormal];
-        [_leftButton setTitleColor:MCOLOR_ALPHA(@"#000000", 0.87) forState:UIControlStateNormal];
+        [_leftButton setTitleColor:[UIColor pro_normalTitleColor] forState:UIControlStateNormal];
         [_leftButton.titleLabel setFont:MRegularFont(16)];
         [_leftButton setHidden:self.model.firstButtonTitle.length <= 0];
         _leftButton.backgroundColor = [UIColor clearColor];
@@ -267,7 +287,7 @@
         _rightButton = [[UIButton alloc] init];
         [_rightButton addTarget:self action:@selector(rightButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
         [_rightButton setTitle:self.model.secondButtonTitle forState:UIControlStateNormal];
-        [_rightButton setTitleColor:[UIColor apc_themeColor] forState:UIControlStateNormal];
+        [_rightButton setTitleColor:[UIColor pro_themeColor] forState:UIControlStateNormal];
         [_rightButton.titleLabel setFont:MRegularFont(16)];
         _rightButton.backgroundColor = [UIColor clearColor];
     }
@@ -279,9 +299,10 @@
         _titleLabel = [[UILabel alloc] init];
         [_titleLabel setNumberOfLines:0];
         [_titleLabel setText:self.model.title];
-        [_titleLabel setFont:MMediumFont(16)];
-        [_titleLabel setTextColor:MCOLOR_ALPHA(@"#000000", 0.87)];
+        [_titleLabel setFont:self.titleFont];
+        [_titleLabel setTextColor:self.titleLabelColor];
         [_titleLabel setTextAlignment:NSTextAlignmentCenter];
+        _titleLabel.hidden = NULLString(self.model.title);
         [self.model addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:nil];
     }
     return _titleLabel;
@@ -292,9 +313,10 @@
         _messageLabel = [[UILabel alloc] init];
         [_messageLabel setNumberOfLines:0];
         [_messageLabel setText:self.model.message];
-        [_messageLabel setFont:MRegularFont(14)];
-        [_messageLabel setTextColor:MCOLOR_ALPHA(@"#000000", 0.65)];
-        [_messageLabel setTextAlignment:NSTextAlignmentLeft];
+        [_messageLabel setFont:self.messageFont];
+        [_messageLabel setTextColor:self.messageLabelColor];
+        [_messageLabel setTextAlignment:self.model.messageTextAlignment];
+        _messageLabel.hidden = NULLString(self.model.message);
         [self.model addObserver:self forKeyPath:@"message" options:NSKeyValueObservingOptionNew context:nil];
     }
     return _messageLabel;
@@ -312,7 +334,7 @@
 - (UIView *)hLineView {
     if (!_hLineView) {
         _hLineView = [[UIView alloc] init];
-        [_hLineView setBackgroundColor:MCOLOR_ALPHA(@"#000000", 0.09)];
+        [_hLineView setBackgroundColor:MCOLOR_ALPHA(@"#000000",0.09)];
     }
     return _hLineView;
 }
@@ -320,10 +342,82 @@
 - (UIView *)vLineView {
     if (!_vLineView) {
         _vLineView = [[UIView alloc] init];
-        [_vLineView setBackgroundColor:MCOLOR_ALPHA(@"#000000", 0.09)];
+        [_vLineView setBackgroundColor:MCOLOR_ALPHA(@"#000000",0.09)];
     }
     return _vLineView;
 }
 
+- (UIColor *)titleLabelColor {
+    if (!_titleLabelColor) {
+        if (!NULLString(self.model.titleTextColor)) {
+            _titleLabelColor = MCOLOR(self.model.titleTextColor);
+        }
+        if (!_titleLabelColor) {
+            _titleLabelColor = [UIColor pro_normalTitleColor];
+        }
+    }
+    
+    return _titleLabelColor;
+}
+
+- (UIFont *)titleFont {
+    if (!_titleFont) {
+        CGFloat fontSize = self.model.titleFontSize == 0 ? 16 : self.model.titleFontSize;
+        _titleFont = [self fontForSize:fontSize weight:self.model.titleFontWeight];
+    }
+    
+    return _titleFont;
+}
+
+- (UIFont *)messageFont {
+    if (!_messageFont) {
+        CGFloat fontSize = self.model.messageFontSize == 0 ? 14 : self.model.messageFontSize;
+        _messageFont = [self fontForSize:fontSize weight:self.model.messageFontWeight];
+    }
+    
+    return _messageFont;
+}
+
+- (UIFont *)fontForSize:(CGFloat)size weight:(PROAlertFontWeight)weight {
+    CGFloat fontSize = size == 0 ? 16 : size;
+    
+    switch (weight) {
+        case PROAlertFontWeightBold:
+            return MBoldFont(fontSize);
+        case PROAlertFontWeightLight:
+            return MLightFont(fontSize);
+        case PROAlertFontWeightRegular:
+            return MRegularFont(fontSize);
+        case PROAlertFontWeightSemiBold:
+            return MSemiboldFont(fontSize);
+        default:
+            return MMediumFont(fontSize);
+    }
+}
+
+- (UIColor *)messageLabelColor {
+    if (!_messageLabelColor) {
+        if (!NULLString(self.model.messageTextColor)) {
+            _messageLabelColor = MCOLOR(self.model.messageTextColor);
+        }
+        if (!_messageLabelColor) {
+            _messageLabelColor = MCOLOR_ALPHA(@"#000000",0.65);
+        }
+    }
+    
+    return _messageLabelColor;
+}
+
+#pragma mark - Setter
+
+- (void)setModel:(PROAlertModel *)model {
+    if (_model != model) {
+        _model = model;
+        // 默认宽高比2
+        if (!_model.imageRatio || _model.imageRatio.floatValue <= 0) {
+            _model.imageRatio = @(2.0);
+        }
+    }
+}
 @end
 

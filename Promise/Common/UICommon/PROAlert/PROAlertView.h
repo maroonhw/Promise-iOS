@@ -2,8 +2,8 @@
 //  PROAlertView.h
 //  AirPayCounter
 //
-//  Created by HuiCao on 2019/6/13.
-//  Copyright © 2021 Hongwei Liu. All rights reserved.
+//  Created by Hongwei Liu on 2019/6/13.
+//  Copyright © 2019 Shopee. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setupContainerMasonry;
 
+/*
+ 使用masonry布局时，横向展示alert需要重新设置子view布局，否者会出现布局混乱
+ */
 - (void)updateContainerMasonry;
 @end
 

@@ -15,10 +15,10 @@ typedef void (^PRORegisterUserInfoResultBlock)(BOOL succeeded,  NSError * _Nulla
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PRORegisterService : NSObject
-
+/// 获取验证码
 + (void)registerSendVerificationCode:(NSString *)phoneNumber
                             complate:(PROSendVerificationCodeResultBlock)complate;
-
+/// 验证验证码
 + (void)registerWithverificationCode:(NSString *)verificationCode
                          phoneNumber:(NSString *)phoneNumber
                             complate:(PRORegisterResultBlock)complate;

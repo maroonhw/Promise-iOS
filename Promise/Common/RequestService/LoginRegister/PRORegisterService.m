@@ -26,7 +26,7 @@
 + (void)registerWithverificationCode:(NSString *)verificationCode
                          phoneNumber:(NSString *)phoneNumber
                             complate:(PRORegisterResultBlock)complate {
-    [AVUser signUpOrLoginWithMobilePhoneNumberInBackground:@"+8618200008888" smsCode:@"123456" block:^(AVUser *user, NSError *error) {
+    [AVUser signUpOrLoginWithMobilePhoneNumberInBackground:phoneNumber smsCode:verificationCode block:^(AVUser *user, NSError *error) {
         if (user != nil) {
             // 注册成功
             NSLog(@"注册成功。objectId：%@", user.objectId);
